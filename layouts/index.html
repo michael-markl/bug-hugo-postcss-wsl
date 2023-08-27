@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {{ $css := resources.Get "style.css" | resources.PostCSS }}
+
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    </head>
+    <body>
+    </body>
+</html>
